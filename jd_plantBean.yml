@@ -6,7 +6,7 @@ name: jd_plantBean
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 /3 * * *' #北京时间0点运行，action会有延迟
+    - cron: '0 3,6,9,12,15,18,21,0 * * *' #北京时间0点运行，action会有延迟
   watch:
     types: started
   repository_dispatch:
