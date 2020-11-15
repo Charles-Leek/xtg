@@ -25,7 +25,7 @@ jobs:
       - name: npm install
         run: |
           npm install
-      - name: '运行 【星推官脚本】'
+      - name: '运行 【宠物脚本】'
         run: |
           node jd_pet.js
         env:
