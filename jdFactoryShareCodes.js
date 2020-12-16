@@ -14,10 +14,10 @@ let FactoryShareCodes = [
 // 判断github action里面是否有水果互助码
 if (process.env.FACTORYSHARECODES) {
   if (process.env.FACTORYSHARECODES.indexOf('&') > -1) {
-    console.log(`您的东东农场互助码选择的是用&隔开\n`)
+    console.log(`您的东东工厂互助码选择的是用&隔开\n`)
     FactoryShareCodes = process.env.FACTORYSHARECODES.split('&');
   } else if (process.env.FACTORYSHARECODES.indexOf('\n') > -1) {
-    console.log(`您的东东农场互助码选择的是用换行隔开\n`)
+    console.log(`您的东东工厂互助码选择的是用换行隔开\n`)
     FactoryShareCodes = process.env.FACTORYSHARECODES.split('\n');
   } else {
     FactoryShareCodes = process.env.FACTORYSHARECODES.split();
